@@ -64,7 +64,7 @@ function AmountBalanceComponent() {
 
     expenseAmount.totalExpense = totalExpense + expenseAmount.amount;
     expenseAmount.totalAmount = totalAmount - expenseAmount.amount;
-    if (expenseAmount.amount < totalAmount) {
+    if (expenseAmount.amount <= totalAmount) {
       saveAmount(expenseAmount);
       setIsOpenExpense(false);
     } else {
